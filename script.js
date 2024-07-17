@@ -6,6 +6,7 @@ const next_btn =document.querySelector(".control_next");
 let n=0;
 
 function changeSlide(){
+    
     for(let i=0;i<imgs.length;i++)
     {
         imgs[i].style.display='none';
@@ -14,6 +15,7 @@ function changeSlide(){
     imgs[n].style.display = 'block';
 }
 changeSlide();
+
 
 pre_btn.addEventListener("click",(e)=>
 {
@@ -27,6 +29,8 @@ pre_btn.addEventListener("click",(e)=>
 
         changeSlide();
 });
+
+
 
 next_btn.addEventListener("click",(e)=>
 {
